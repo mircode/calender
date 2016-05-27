@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>万年历</title>
+		<!-- build:reset -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<!-- endbuild  -->
+		<!-- build:css -->
+		<link rel="stylesheet" href="css/calendar.css" />
+		<!-- endbuild  -->
+		
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	</head>
+	<body scroll="no">
+		<div class="result-op c-container">
+			<div class="op-calendar-new">
+
+				<div class="op-calendar-new-box">
+					<div class="op-calendar-new-left c-clearfix">
+
+						<div class="op-calendar-new-select-box" style="visibility: visible;">
+							<!--年份选择框开始-->
+							<div class="op-calendar-new-year-box">
+								<div key="data-click"  tabindex="0" class="c-dropdown2 OP_LOG_BTN c-dropdown2-common"  style="z-index: 200;">
+									<div class="c-dropdown2-btn-group">
+										<div class="c-dropdown2-btn">2016年</div>
+										<div class="c-dropdown2-btn-icon">
+											<div class="c-dropdown2-btn-icon-border"> <i class="c-icon c-icon-triangle-down"></i> </div>
+										</div>
+									</div>
+									<div class="c-dropdown2-menu" style="visibility: hidden; height: auto; left: 0px; width: 78px;">
+										<div class="c-dropdown2-menu-inner opui-scroll-ctrl-content opui-scroll-onwheel" style="height: 312px; overflow-y: scroll;">
+											<ul class="c-dropdown2-menubox"></ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--年份选择框结束-->
+							<!--月份选择框开始-->
+							<div class="op-calendar-new-month-box">
+								<a href="javascript:;" class="op-calendar-new-prev-month" hidefocus="true" onclick="return false">&lt;</a>
+								<a href="javascript:;" class="op-calendar-new-next-month" hidefocus="true" onclick="return false">&gt;</a>
+								<div key="data-click"  tabindex="0" class="c-dropdown2 OP_LOG_BTN c-dropdown2-common"  style="z-index: 198;">
+									<div class="c-dropdown2-btn-group">
+										<div class="c-dropdown2-btn">4月</div>
+										<div class="c-dropdown2-btn-icon">
+											<div class="c-dropdown2-btn-icon-border"> <i class="c-icon c-icon-triangle-down"></i> </div>
+										</div>
+									</div>
+									<div class="c-dropdown2-menu" style="visibility: hidden; height: auto;">
+										<div class="c-dropdown2-menu-inner" style="height: 312px;">
+											<ul class="c-dropdown2-menubox"></ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--月份选择框开始-->
+
+							<!--假期选择框开始-->
+							<div class="op-calendar-new-holiday-box">
+								<div key="data-click"  tabindex="0" class="c-dropdown2 OP_LOG_BTN c-dropdown2-common"  style="z-index: 196;">
+									<div class="c-dropdown2-btn-group">
+										<div class="c-dropdown2-btn">假期安排</div>
+										<div class="c-dropdown2-btn-icon">
+											<div class="c-dropdown2-btn-icon-border"> <i class="c-icon c-icon-triangle-down"></i> </div>
+										</div>
+									</div>
+									<div class="c-dropdown2-menu" style="visibility: hidden; height: 234px;">
+										<div class="c-dropdown2-menu-inner" style="height: 234px;">
+											<ul class="c-dropdown2-menubox">
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--假期选择框结束-->
+						</div>
+
+						<!--返回今天开始-->
+						<a class="c-btn op-calendar-new-backtoday OP_LOG_BTN" hidefocus="true"  href="javascript:;">返回今天</a>
+
+						<!--日历列表开始-->
+						<div class="op-calendar-new-table-box c-gap-top"></div>
+						<!--日历列表结束-->
+					</div>
+					<!--日历详情开始-->
+					<div class="op-calendar-new-right"></div>
+					<!--日历详情结束-->
+				</div>
+				<!--其他信息-->
+				<div class="op-calendar-new-holidaytip" style="display: none;"></div>
+			</div>
+		</div>
+	</body>
+	
+	<!-- build:js -->
+	<script src="js/calendar.js" type="application/javascript"></script>
+	<script src="js/common.js" type="application/javascript"></script>
+	<script src="js/dom.js" type="application/javascript"></script>
+	<script src="js/event.js" type="application/javascript"></script>
+	<script src="js/main.js" type="application/javascript"></script>
+	<!-- endbuild  -->
+</html>

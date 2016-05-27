@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="webkit chrome chrome49 win js theme theme-white orientation_landscape maxw_1280">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>万年历 Calender</title>
+		<link href="./css/base.lib.min.css" rel="stylesheet" media="screen">
+		<link href="./css/prettify-cmd.css" type="text/css" rel="stylesheet">
+		<link href="./css/layout.min.css" rel="stylesheet" media="screen">
+		<link href="./css/mdeditor.lib.min.css" rel="stylesheet" media="screen">
+
+		<body class="theme  pace-done theme-white">
+
+			<div id="editor-reader-full" class="editor-reader-full-shown" style="position: static; padding-right: 75px;">
+				<div id="reader-full-topInfo" class="reader-full-topInfo-shown">
+					<span>
+				        <code class="article-author">@魏国兴</code><!--render by render.js-->
+				    </span>
+					<code class=""><span class="article-updated-date">2016-04-13 23:40</span></code>
+					<!--render by render.js-->
+					<code class=""><span>字数 </span><span class="article-characters">1018</span></code>
+					<code class=""><span>阅读 </span><span class="article-read">0</span></code>
+					<!--render by render.js-->
+				</div>
+				<div id="wmd-preview" class="wmd-preview wmd-preview-full-reader" data-medium-element="true" style="height: auto; left: 0px;">
+					<div class="md-section-divider"></div>
+					<div class="md-section-divider"></div>
+					<h1 data-anchor-id="82du" id="万年历-calender"><img src="./img/favicon.png" alt="目录结构" title="">万年历 Calender</h1>
+					<hr>
+					<div class="md-section-divider"></div>
+					<h2 data-anchor-id="ffri" id="一摘要">一、摘要</h2>
+					<p data-anchor-id="87gs">
+						<div class="toc">
+							<ul>
+								<li><a href="#万年历-calender">万年历 Calender</a>
+									<ul>
+										<li><a href="#一摘要">一、摘要</a></li>
+										<li><a href="#二简介">二、简介</a></li>
+										<li><a href="#三开发流程">三、开发流程</a></li>
+										<li><a href="#四主要模块">四、主要模块</a></li>
+										<li><a href="#五目录结构">五、目录结构</a></li>
+										<li><a href="#六接口文档">六、接口文档</a>
+											<ul>
+												<li><a href="#1-calendar类">1. Calendar类</a></li>
+												<li><a href="#2-dom类">2. Dom类</a></li>
+											</ul>
+										</li>
+										<li><a href="#七调试日历">七、调试日历</a></li>
+										<li><a href="#八移动适配">八、移动适配</a></li>
+										<li><a href="#九后续开发">九、后续开发</a></li>
+										<li><a href="#十总结">十、总结</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</p>
+					<hr>
+					<div class="md-section-divider"></div>
+					<h2 data-anchor-id="cfaw" id="二简介">二、简介</h2>
+					<p data-anchor-id="hm1r">本款万年历实现了农历，公历，天干地支，24节气，国内国际假日，每日宜忌（08年~20年），节假日（14年~16年）的查询。 <br> 万年历界面采用百度日历UI界面，核心JS代码手动编写，没有依赖函数库。代码采用模块式开发，gulp构建，HBuilder开发。
+						<strong><em>另用node-webkit打包了一版桌面应用，方便使用。</em></strong></p>
+					<p data-anchor-id="t6uy"><img src="./img/main.gif" alt="预览" title=""></p>
+					<div class="md-section-divider"></div>
+					<h2 data-anchor-id="coo0" id="三开发流程">三、开发流程</h2>
+					<ul data-anchor-id="j83m">
+						<li class="todo-list-item"><i class="icon-check-empty"></i>选择一款日历UI（经过筛选，百度日历的UI比较简洁漂亮）。</li>
+						<li class="todo-list-item"><i class="icon-check-empty"></i>编写JavaScript核心代码，实现农历、公历等日期信息参数的查询。</li>
+						<li class="todo-list-item"><i class="icon-check-empty"></i>将JavaScript代码和UI界面，整合到一起。期间涉及DOM生成模块（实现模板功能），Event模块，CSS模块（切换主题和UI），日历算法核心模块，仿jQuery模块（工具类）。</li>
+						<li class="todo-list-item"><i class="icon-check-empty"></i>使用gulp前端构建工具打包发布工程。</li>
+						<li class="todo-list-item"><i class="icon-check-empty"></i>编写开发文档。</li>
+					</ul>
+					<div class="md-section-divider"></div>
+					<h2 data-anchor-id="9gec" id="四主要模块">四、主要模块</h2>
+					<ul data-anchor-id="52dn">
+						<li class="todo-list-item"><i class="icon-check-sign"></i>核心算法模块（calender.js）</li>
+						<li class="todo-list-item"><i class="icon-check-sign"></i>仿jQuery模块，提供工具函数（common.js）</li>
+						<li class="todo-list-item"><i class="icon-check-sign"></i>Dom模块，生成HTML页面结构（dom.js）</li>
+						<li class="todo-list-item"><i class="icon-check-sign"></i>Event模块，日历中各种事件（event.js）</li>
+						<li class="todo-list-item"><i class="icon-check-sign"></i>入口模块（main.js）</li>
+					</ul>
+					<div class="md-section-divider"></div>
+					<h2 data-anchor-id="o7th" id="五目录结构">五、目录结构</h2>
+					<p data-anchor-id="ud2e"><img src="./img/construct.png" alt="目录结构" title=""></p>
+					<div class="md-section-divider"></div>
+					<h2 data-anchor-id="fup2" id="六接口文档">六、接口文档</h2>
+					<p data-anchor-id="x22x">日历主要有两个全局变量window.Calendar和window.DOM，Calender类主要实现了日历相关的功能，DOM类实现了主要的jQuery函数。</p>
+					<div class="md-section-divider"></div>
+					<h3 data-anchor-id="wdas" id="1-calendar类">1. Calendar类</h3>
+					<p data-anchor-id="nxw1"><img src="./img/calendar_api.png" alt="目录结构" title=""></p>
+					<div class="md-section-divider"></div>
+					<h3 data-anchor-id="ikb3" id="2-dom类">2. Dom类</h3>
+					<p data-anchor-id="7i1m"><img src="./img/dom_api.png" alt="目录结构" title=""></p>
+					<div class="md-section-divider"></div>
+					<h2 data-anchor-id="lev1" id="七调试日历">七、调试日历</h2>
+					<p data-anchor-id="av33"><img src="./img/console_show.png" alt="目录结构" title=""></p>
+					<div class="md-section-divider"></div>
+					<h2 data-anchor-id="wxjk" id="八移动适配">八、移动适配</h2>
+					<div class="md-section-divider"></div><pre class="prettyprint linenums prettyprinted" data-anchor-id="ycpv"><ol class="linenums"><li class="L0"><code class="language-css"><span class="com">/* 小屏幕（平板，大于等于 768px） */</span></code></li><li class="L1"><code class="language-css"><span class="lit">@media</span><span class="pln"> </span><span class="pun">(</span><span class="pln">max</span><span class="pun">-</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">600px</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span></code></li><li class="L2"><code class="language-css"><span class="pln">    </span><span class="pun">.</span><span class="pln">op</span><span class="pun">-</span><span class="pln">calendar</span><span class="pun">-</span><span class="kwd">new</span><span class="pun">-</span><span class="pln">right</span><span class="pun">{</span></code></li><li class="L3"><code class="language-css"><span class="pln">        display</span><span class="pun">:</span><span class="pln">none</span><span class="pun">;</span></code></li><li class="L4"><code class="language-css"><span class="pln">    </span><span class="pun">}</span></code></li><li class="L5"><code class="language-css"><span class="pln">    </span><span class="pun">.</span><span class="pln">c</span><span class="pun">-</span><span class="pln">container</span><span class="pun">{</span></code></li><li class="L6"><code class="language-css"><span class="pln">        width</span><span class="pun">:</span><span class="lit">409px</span><span class="pun">;</span></code></li><li class="L7"><code class="language-css"><span class="pln">        border</span><span class="pun">-</span><span class="pln">right</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2px</span><span class="pln"> solid </span><span class="com">#57abff;</span></code></li><li class="L8"><code class="language-css"><span class="pln">    </span><span class="pun">}</span></code></li><li class="L9"><code class="language-css"><span class="pun">}</span></code></li></ol></pre>
+					<p
+						data-anchor-id="gc3h"><img src="./img/app.gif" alt="目录结构" title=""></p>
+						<div class="md-section-divider"></div>
+						<h2 data-anchor-id="t9x4" id="九后续开发">九、后续开发</h2>
+						<ul data-anchor-id="qbhe">
+							<li class="todo-list-item"><i class="icon-check-empty"></i>模块之间通过require加载。</li>
+							<li class="todo-list-item"><i class="icon-check-empty"></i>CSS通过Less等css编译工具编译完成。</li>
+							<li class="todo-list-item"><i class="icon-check-empty"></i>只做了简单媒体查询样式代码的编写，移动端适配的功能有待完善和开发。</li>
+							<li class="todo-list-item"><i class="icon-check-empty"></i>对HTML结构要求比较苛刻,暂不支持模板替换和主题替换。</li>
+						</ul>
+						<div class="md-section-divider"></div>
+						<h2 data-anchor-id="pqm3" id="十总结">十、总结</h2>
+						<p data-anchor-id="q36l">限于时间原因，不能更多的书写详细的文档，还希望各位大神拜读源码了。通过该项目又一次发现了自己技术的不足，需要继续学习....</p>
+						<hr>
+						<p data-anchor-id="czr6">作者 魏国兴 <br> 邮箱 1607646162@qq.com <br> 2016 年 04月 13日 </p>
+				</div>
+			</div>
+		</body>
+</html>
