@@ -1,6 +1,8 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+# ![图标](https://raw.githubusercontent.com/mircode/calender/master/doc/html/img/favicon.png)万年历 Calender
+
+------
+
+## 一、摘要
 
 - [*万年历 Calender](#%E4%B8%87%E5%B9%B4%E5%8E%86-calender)
   - [一、摘要](#%E4%B8%80%E3%80%81%E6%91%98%E8%A6%81)
@@ -15,16 +17,7 @@
   - [八、移动适配](#%E5%85%AB%E3%80%81%E7%A7%BB%E5%8A%A8%E9%80%82%E9%85%8D)
   - [九、后续开发](#%E4%B9%9D%E3%80%81%E5%90%8E%E7%BB%AD%E5%BC%80%E5%8F%91)
   - [十、总结](#%E5%8D%81%E3%80%81%E6%80%BB%E7%BB%93)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# ![图标](https://raw.githubusercontent.com/mircode/calender/master/doc/html/img/favicon.png)万年历 Calender
-
-------
-
-## 一、摘要
-[TOC]
-
+  
 ------
 
 ## 二、简介
