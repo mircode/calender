@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [*万年历 Calender](#%E4%B8%87%E5%B9%B4%E5%8E%86-calender)
+  - [一、摘要](#%E4%B8%80%E3%80%81%E6%91%98%E8%A6%81)
+  - [二、简介](#%E4%BA%8C%E3%80%81%E7%AE%80%E4%BB%8B)
+  - [三、开发流程](#%E4%B8%89%E3%80%81%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B)
+  - [四、主要模块](#%E5%9B%9B%E3%80%81%E4%B8%BB%E8%A6%81%E6%A8%A1%E5%9D%97)
+  - [五、目录结构](#%E4%BA%94%E3%80%81%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84)
+  - [六、接口文档](#%E5%85%AD%E3%80%81%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3)
+    - [1. Calendar类](#1-calendar%E7%B1%BB)
+    - [2. Dom类](#2-dom%E7%B1%BB)
+  - [七、调试日历](#%E4%B8%83%E3%80%81%E8%B0%83%E8%AF%95%E6%97%A5%E5%8E%86)
+  - [八、移动适配](#%E5%85%AB%E3%80%81%E7%A7%BB%E5%8A%A8%E9%80%82%E9%85%8D)
+  - [九、后续开发](#%E4%B9%9D%E3%80%81%E5%90%8E%E7%BB%AD%E5%BC%80%E5%8F%91)
+  - [十、总结](#%E5%8D%81%E3%80%81%E6%80%BB%E7%BB%93)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # ![图标](https://raw.githubusercontent.com/mircode/calender/master/doc/html/img/favicon.png)万年历 Calender
 
 ------
