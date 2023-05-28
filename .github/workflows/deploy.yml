@@ -14,9 +14,10 @@ jobs:
         # https://stackoverflow.com/a/70447517
         # test
         run: |
-          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          mkdir ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/id_rsa
+          '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
       - name: connect and pull
         run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }} && git checkout ${{ secrets.MASTER_BRANCH }} && git pull && exit"
       - name: cleanup
