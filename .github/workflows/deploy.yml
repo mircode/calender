@@ -15,6 +15,7 @@ jobs:
         # test
         run: |
           echo "${{ secrets.KEY_PEM }}" > ~/mykey.pem
+          chmod 600 ~/mykey.pem
       - name: connect and pull
         run: |
           cd ~
