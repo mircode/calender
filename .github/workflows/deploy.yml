@@ -7,7 +7,7 @@ on:
       - closed
 jobs:
   deploy:
-    runs-on: openssh-server
+    runs-on: ubuntu-latest
     steps:
       - name: install ssh keys
         # check this thread to understand why its needed:
