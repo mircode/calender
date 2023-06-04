@@ -20,6 +20,6 @@ jobs:
           ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
           echo "${{ secrets.KEY_PEM }}" > ~/mykey.pem
       - name: connect and pull
-        run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo "hi" && exit"
+        run: ssh -i "mykey.pem" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo "hi" && exit"
       - name: cleanup
         run: rm -rf ~/.ssh
