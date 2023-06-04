@@ -20,6 +20,6 @@ jobs:
       - name: connect and pull
         run: |
           cd ~
-          ssh -i "mykey.pem" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo "hi" && exit"
+          ssh -i "mykey.pem" -o UserKnownHostsFile=~/.ssh/known_hosts ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo "hi" && exit"
       - name: cleanup
         run: rm -rf ~/.ssh
