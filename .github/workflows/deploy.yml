@@ -19,7 +19,6 @@ jobs:
       - name: connect and pull
         run: |
           cd ~
-          pwd
           ssh -i "mykey.pem" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo "hi" && exit"
       - name: cleanup
         run: rm -rf ~/.ssh
