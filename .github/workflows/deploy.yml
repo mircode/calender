@@ -15,8 +15,6 @@ jobs:
         # test
         run: |
           echo "${{ secrets.KEY_PEM }}" > ~/mykey.pem
-          mkdir ~/.ssh
-          echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/known_hosts
       - name: connect and pull
         run: |
           cd ~
