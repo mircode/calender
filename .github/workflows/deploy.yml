@@ -16,8 +16,10 @@ jobs:
         run: |
           echo "${{ secrets.KEY_PEM }}" > ~/mykey.pem
           pwd
-          ls
       - name: connect and pull
-        run: ssh -i "mykey.pem" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo "hi" && exit"
+        run: |
+          cd ~
+          pwd
+          ssh -i "mykey.pem" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo "hi" && exit"
       - name: cleanup
         run: rm -rf ~/.ssh
